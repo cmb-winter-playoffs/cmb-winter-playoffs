@@ -16,6 +16,10 @@
  * Base structure
  */
 
+html, body {
+  overflow: auto;
+}
+
 body {
   font-family: 'Yuji Syuku', serif;
   text-shadow: 0 .05rem .05rem rgba(255, 255, 255, 0.2);
@@ -24,7 +28,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 46em;
 }
 
 
@@ -57,4 +61,9 @@ body {
 h3 {
   font-family: 'Mountains of Christmas', cursive;
   font-size: 2em;
+}
+
+.carousel {
+  margin-top: 5em;
+  margin-bottom: 5em;
 }

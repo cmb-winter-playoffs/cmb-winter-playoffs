@@ -32,8 +32,8 @@
 </style>
 
     
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="cover.css" rel="stylesheet">
   </head>
   <body id="snowflakes-container" class="d-flex h-100 text-center text-white">
     
@@ -43,7 +43,9 @@
         <h3 class="float-md-start mb-0">CMB Winter Playoffs</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
           <a class="scoreboard nav-link active" href="#" onclick="toggleActive('scoreboard')">Scoreboard</a>
+          <a class="teams nav-link" href="#" onclick="toggleActive('teams')">Teams</a>
           <a class="schedule nav-link" href="#" onclick="toggleActive('schedule')">Schedule</a>
+          <a class="game_period nav-link" href="#" onclick="toggleActive('game_period')">Game Periods</a>
         </nav>
       </div>
     </header>
@@ -51,12 +53,63 @@
     <main>
       <div class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
+          <div class="teams carousel-item">
+            <table class="table table-light table-striped table-hover">
+              <thead class="align-middle">
+                <tr>
+                  <th style="width:25%" scope="col">Équipe | Team 1</th>
+                  <th style="width:25%" scope="col">Équipe | Team 2</th>
+                  <th style="width:25%" scope="col">Équipe | Team 3</th>
+                  <th style="width:25%" scope="col">Équipe | Team 4</th>
+                </tr>
+              </thead>
+              <tbody class="align-middle">
+                <tr>
+                  <td>Nathan Van Beilen</td>
+                  <td>Nathalie Côté</td>
+                  <td>Miguel Tremblay</td>
+                  <td>Leandra Langlois</td>
+                </tr>
+                <tr>
+                  <td>Daniela Sudar</td>
+                  <td>Matthew Just</td>
+                  <td>Bouran Hurani</td>
+                  <td>Judy Meltzer</td>
+                </tr>
+                <tr>
+                  <td>Kiera Abernethy</t>
+                  <td>Justina Mang</td>
+                  <td>Dawson Brown</td>
+                  <td>Thomas Villeneuve</td>
+                </tr>
+                <tr>
+                  <td>Iria Heredia-Vazquez</td>
+                  <td>Jackie Mercer</td>
+                  <td>Allison O'Halloran</td>
+                  <td>Nadeema Rafiqzad</td>
+                </tr>
+                <tr>
+                  <td>Thoby Cameron</td>
+                  <td>Mel Bergeron</td>
+                  <td>Meg Baskerville </td>
+                  <td>Samantha Lee-Wardell</td>
+                </tr>
+                <tr>
+                  <td>Liz Dykman</td>
+                  <td>Shannon Harris</td>
+                  <td>Ryan Reiber</td>
+                  <td>Brendan McGovern</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div class="scoreboard carousel-item active">
             <table class="table table-light table-striped table-hover">
-              <thead>
+              <thead class="align-middle">
                 <tr>
-                  <th scope="col" rowspan="2" class="align-middle">Team Name</th>
-                  <th scope="col" colspan="8">Challenge</th>
+                  <th scope="col" rowspan="2" class="align-middle"></th>
+                  <th scope="col" colspan="5">Challenge</th>
+                  <th scope="col" rowspan="2" class="align-middle">Total</th>
                 </tr>
                 <tr>
                   <th scope="col">1</th>
@@ -64,16 +117,11 @@
                   <th scope="col">3</th>
                   <th scope="col">4</th>
                   <th scope="col">5</th>
-                  <th scope="col">6</th>
-                  <th scope="col">7</th>
-                  <th scope="col">8</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="align-middle">
                 <tr>
-                  <th scope="row">name 1</th>
-                  <td></td>
-                  <td></td>
+                  <th scope="row">Team 1</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -82,20 +130,7 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <th scope="row">name 2</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">name 3</th>
-                  <td></td>
-                  <td></td>
+                  <th scope="row">Team 2</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -104,9 +139,7 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <th scope="row">name 4</th>
-                  <td></td>
-                  <td></td>
+                  <th scope="row">Team 3</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -115,9 +148,7 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <th scope="row">name 5</th>
-                  <td></td>
-                  <td></td>
+                  <th scope="row">Team 4</th>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -128,7 +159,220 @@
               </tbody>
             </table>
           </div>
-          <div id="schedule" class="carousel-item">
+          <div class="schedule carousel-item">
+            <p>Links located in agenda attached to invitation.
+              <br>
+              Les liens se trouvent dans l'agenda joint à l'invitation.
+            </p>
+            <table class="table table-light table-striped table-hover">
+              <thead class="align-middle">
+                <tr>
+                  <th style="width:20%" scope="col">Time</th>
+                  <th style="width:40%" scope="col">Activity</th>
+                  <th style="width:40%" scope="col">Location</th>
+                </tr>
+              </thead>
+              <tbody class="align-middle">
+                <tr>
+                  <td>10h00<br>-<br>10h15</td>
+                  <td>
+                    Opening Ceremony<br>Cérémonie d'ouverture
+                  </td>
+                  <td>
+                    MS Teams Arena<br>Arène de MS Teams
+                  </td>
+                </tr>
+                <tr>
+                  <td>10h15<br>-<br>11h05</td>
+                  <td>
+                    Game Period 1<br>Période de jeu 1
+                  </td>
+                  <td>
+                    See team schedule<br>Voir le calendrier de l'équipe
+                  </td>
+                </tr>
+                <tr>
+                  <td>11h05<br>-<br>11h15</td>
+                  <td>
+                    Health Break/Optional Get Up and Move<br>Pause santé/Optionnel levez-vous et bougez
+                  </td>
+                  <td>
+                    Club MS Teams
+                  </td>
+                </tr>
+                <tr>
+                  <td>11h15<br>-<br>12h05</td>
+                  <td>
+                    Game Period 2<br>Période de jeu 2
+                  </td>
+                  <td>
+                    See team schedule<br>Voir le calendrier de l'équipe
+                  </td>
+                </tr>
+                <tr>
+                  <td>12h15<br>-<br>13h00</td>
+                  <td>
+                    Lunch<br>Déjeuner
+                  </td>
+                  <td>
+                    Gathertown Lounge (optional)<br>Salon Gathertown (facultatif)
+                  </td>
+                </tr>
+                <tr>
+                  <td>13h00<br>-<br>13h50</td>
+                  <td>
+                    Game Period 3<br>Période de jeu 3
+                  </td>
+                  <td>
+                    See team schedule<br>Voir le calendrier de l'équipe
+                  </td>
+                </tr>
+                <tr>
+                  <td>13h50<br>-<br>14h00</td>
+                  <td>
+                    Health Break/Optional Get Up and Move<br>Pause santé/Optionnel levez-vous et bougez
+                  </td>
+                  <td>
+                    Club MS Teams
+                  </td>
+                </tr>
+                <tr>
+                  <td>14h00<br>-<br>14h50</td>
+                  <td>
+                    Game Period 4<br>Période de jeu 4
+                  </td>
+                  <td>
+                    See team schedule<br>Voir le calendrier de l'équipe
+                  </td>
+                </tr>
+                <tr>
+                  <td>14h50<br>-<br>15h00</td>
+                  <td>
+                    Health Break/Optional Get Up and Move<br>Pause santé/Optionnel levez-vous et bougez
+                  </td>
+                  <td>
+                    Club MS Teams
+                  </td>
+                </tr>
+                <tr>
+                  <td>15h00<br>-<br>15h50</td>
+                  <td>
+                    Game Period 5<br>Période de jeu 5
+                  </td>
+                  <td>
+                    See team schedule<br>Voir le calendrier de l'équipe
+                  </td>
+                </tr>
+                <tr>
+                  <td>15h50<br>-<br>16h00</td>
+                  <td>
+                    Closing Ceremony<br>Cérémonie de clôture
+                  </td>
+                  <td>
+                    MS Teams Arena<br>Arène de MS Teams
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="game_period carousel-item">
+            <p>Links located in agenda attached to invitation.
+              <br>
+              Les liens se trouvent dans l'agenda joint à l'invitation.
+            </p>
+            <table class="table table-light table-striped table-hover">
+              <thead class="align-middle">
+                <tr>
+                  <th style="width:10%" scope="col">Team</th>
+                  <th style="width:18%" scope="col">Game Period 1</th>
+                  <th style="width:18%" scope="col">Game Period 2</th>
+                  <th style="width:18%" scope="col">Game Period 3</th>
+                  <th style="width:18%" scope="col">Game Period 4</th>
+                  <th style="width:18%" scope="col">Game Period 5</th>
+                </tr>
+              </thead>
+              <tbody class="align-middle">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Guess the Emoji Phrase</td>
+                  <td>Taboo</td>
+                  <td>Workplace Feud 1</td>
+                  <td>Wikipedia Race</td>
+                  <td>Scavenger Hunt</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Guess the Emoji Phrase</td>
+                  <td>Scavenger Hunt</td>
+                  <td>Workplace Feud 2</td>
+                  <td>Wikipedia Race</td>
+                  <td>Taboo</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Wikipedia Race</td>
+                  <td>Scavenger Hunt</td>
+                  <td>Workplace Feud 1</td>
+                  <td>Guess the Emoji Phrase</td>
+                  <td>Taboo</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Wikipedia Race</td>
+                  <td>Taboo</td>
+                  <td>Workplace Feud 2</td>
+                  <td>Guess the Emoji Phrase</td>
+                  <td>Scavenger Hunt</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="table table-light table-striped table-hover">
+              <thead class="align-middle">
+                <tr>
+                  <th style="width:10%" scope="col">Team</th>
+                  <th style="width:18%" scope="col">Game Period 1</th>
+                  <th style="width:18%" scope="col">Game Period 2</th>
+                  <th style="width:18%" scope="col">Game Period 3</th>
+                  <th style="width:18%" scope="col">Game Period 4</th>
+                  <th style="width:18%" scope="col">Game Period 5</th>
+                </tr>
+              </thead>
+              <tbody class="align-middle">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Guess the Emoji Phrase</td>
+                  <td>Taboo</td>
+                  <td>Workplace Feud 1</td>
+                  <td>Wikipedia Race</td>
+                  <td>Scavenger Hunt</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Guess the Emoji Phrase</td>
+                  <td>Scavenger Hunt</td>
+                  <td>Workplace Feud 2</td>
+                  <td>Wikipedia Race</td>
+                  <td>Taboo</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Wikipedia Race</td>
+                  <td>Scavenger Hunt</td>
+                  <td>Workplace Feud 1</td>
+                  <td>Guess the Emoji Phrase</td>
+                  <td>Taboo</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Wikipedia Race</td>
+                  <td>Taboo</td>
+                  <td>Workplace Feud 2</td>
+                  <td>Guess the Emoji Phrase</td>
+                  <td>Scavenger Hunt</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
