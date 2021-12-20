@@ -45,7 +45,7 @@
           <a class="scoreboard nav-link active" href="#" onclick="toggleActive('scoreboard')">Scoreboard</a>
           <a class="teams nav-link" href="#" onclick="toggleActive('teams')">Teams</a>
           <a class="schedule nav-link" href="#" onclick="toggleActive('schedule')">Schedule</a>
-          <a class="game_period nav-link" href="#" onclick="toggleActive('game_period')">Game Periods</a>
+          <a class="game_descriptions nav-link" href="#" onclick="toggleActive('game_descriptions')">Games</a>
         </nav>
       </div>
     </header>
@@ -53,7 +53,66 @@
     <main>
       <div class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
+          <div class="scoreboard carousel-item active">
+            <table class="table table-light table-striped table-hover">
+              <thead class="align-middle">
+                <tr>
+                  <th scope="col" rowspan="2" class="align-middle"></th>
+                  <th scope="col" colspan="5">Game Period | Période de jeu</th>
+                  <th scope="col" rowspan="2" class="align-middle">Total</th>
+                </tr>
+                <tr>
+                  <th scope="col">1</th>
+                  <th scope="col">2</th>
+                  <th scope="col">3</th>
+                  <th scope="col">4</th>
+                  <th scope="col">5</th>
+                </tr>
+              </thead>
+              <tbody class="align-middle">
+                <tr>
+                  <th scope="row">Team/Équipe 1</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Team/Équipe 2</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Team/Équipe 3</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Team/Équipe 4</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div class="teams carousel-item">
+            <br>
+            <h3>Teams | Équipes</h3>
+            <br>
             <table class="table table-light table-striped table-hover">
               <thead class="align-middle">
                 <tr>
@@ -103,67 +162,14 @@
               </tbody>
             </table>
           </div>
-          <div class="scoreboard carousel-item active">
-            <table class="table table-light table-striped table-hover">
-              <thead class="align-middle">
-                <tr>
-                  <th scope="col" rowspan="2" class="align-middle"></th>
-                  <th scope="col" colspan="5">Challenge</th>
-                  <th scope="col" rowspan="2" class="align-middle">Total</th>
-                </tr>
-                <tr>
-                  <th scope="col">1</th>
-                  <th scope="col">2</th>
-                  <th scope="col">3</th>
-                  <th scope="col">4</th>
-                  <th scope="col">5</th>
-                </tr>
-              </thead>
-              <tbody class="align-middle">
-                <tr>
-                  <th scope="row">Team 1</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">Team 2</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">Team 3</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">Team 4</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
           <div class="schedule carousel-item">
             <p>Links located in agenda attached to invitation.
               <br>
               Les liens se trouvent dans l'agenda joint à l'invitation.
             </p>
+            <br>
+            <h3>Agenda | L'ordre du jour</h3>
+            <br>
             <table class="table table-light table-striped table-hover">
               <thead class="align-middle">
                 <tr>
@@ -274,12 +280,9 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-          <div class="game_period carousel-item">
-            <p>Links located in agenda attached to invitation.
-              <br>
-              Les liens se trouvent dans l'agenda joint à l'invitation.
-            </p>
+            <br>
+            <h3>Team Schedule</h3>
+            <br>
             <table class="table table-light table-striped table-hover">
               <thead class="align-middle">
                 <tr>
@@ -326,50 +329,82 @@
                 </tr>
               </tbody>
             </table>
-
+            <br>
+            <h3>Programme de l'équipe</h3>
+            <br>
             <table class="table table-light table-striped table-hover">
               <thead class="align-middle">
                 <tr>
-                  <th style="width:10%" scope="col">Team</th>
-                  <th style="width:18%" scope="col">Game Period 1</th>
-                  <th style="width:18%" scope="col">Game Period 2</th>
-                  <th style="width:18%" scope="col">Game Period 3</th>
-                  <th style="width:18%" scope="col">Game Period 4</th>
-                  <th style="width:18%" scope="col">Game Period 5</th>
+                  <th style="width:10%" scope="col">Équipe</th>
+                  <th style="width:18%" scope="col">Période de jeu 1</th>
+                  <th style="width:18%" scope="col">Période de jeu 2</th>
+                  <th style="width:18%" scope="col">Période de jeu 3</th>
+                  <th style="width:18%" scope="col">Période de jeu 4</th>
+                  <th style="width:18%" scope="col">Période de jeu 5</th>
                 </tr>
               </thead>
               <tbody class="align-middle">
                 <tr>
                   <th scope="row">1</th>
-                  <td>Guess the Emoji Phrase</td>
-                  <td>Taboo</td>
-                  <td>Workplace Feud 1</td>
-                  <td>Wikipedia Race</td>
-                  <td>Scavenger Hunt</td>
+                  <td>Devinez la phrase de l'Emoji</td>
+                  <td>Tabou</td>
+                  <td>Querelle sur le lieu de travail 1</td>
+                  <td>Course Wikipedia</td>
+                  <td>Chasse au trésor</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Guess the Emoji Phrase</td>
-                  <td>Scavenger Hunt</td>
-                  <td>Workplace Feud 2</td>
-                  <td>Wikipedia Race</td>
-                  <td>Taboo</td>
+                  <td>Devinez la phrase de l'Emoji</td>
+                  <td>Chasse au trésor</td>
+                  <td>Querelle sur le lieu de travail 2</td>
+                  <td>Course Wikipedia</td>
+                  <td>Tabou</td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Wikipedia Race</td>
-                  <td>Scavenger Hunt</td>
-                  <td>Workplace Feud 1</td>
-                  <td>Guess the Emoji Phrase</td>
-                  <td>Taboo</td>
+                  <td>Course Wikipedia</td>
+                  <td>Chasse au trésor</td>
+                  <td>Querelle sur le lieu de travail 1</td>
+                  <td>Devinez la phrase de l'Emoji</td>
+                  <td>Tabou</td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
-                  <td>Wikipedia Race</td>
-                  <td>Taboo</td>
-                  <td>Workplace Feud 2</td>
-                  <td>Guess the Emoji Phrase</td>
-                  <td>Scavenger Hunt</td>
+                  <td>Course Wikipedia</td>
+                  <td>Tabou</td>
+                  <td>Querelle sur le lieu de travail 2</td>
+                  <td>Devinez la phrase de l'Emoji</td>
+                  <td>Chasse au trésor</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="game_descriptions carousel-item">
+            <br>
+            <h3>Games | Jeux</h3>
+            <br>
+            <table class="table table-light table-striped table-hover">
+              <tbody class="text-start">
+                <tr>
+                  <td><b>Guess that Emoji Phrase:</b> Do you communicate almost exclusively on your phone? Are you worried that you’re going to start using emojis in your briefing notes because you use them so often? Or perhaps you want to advance your understanding of the emoji world through some fun brain teasers? Regardless, put your thinking cap on to try to find the meaning from a string of emojis.</td>
+                  <td><b>Devinez la phrase de l'Emoji:</b> Communiquez-vous presque exclusivement sur votre téléphone ? Vous avez peur de commencer à utiliser des emojis dans vos notes de synthèse parce que vous les utilisez si souvent ? Ou peut-être souhaitez-vous approfondir votre compréhension du monde des emojis grâce à quelques casse-tête amusants ? Quoi qu'il en soit, mettez votre chapeau de réflexion pour essayer de trouver la signification d'une série d'emojis.</td>
+                </tr>
+                <tr>
+                  <td><b>Scavenger Hunt:</b> Come run around your house and grab the items we call out to show us – I promise you’ll get your steps in, and we’ll all learn more about each other through the virtual show and tell of our treasures!</td>
+                  <td><b>Chasse au trésor :</b> Viens courir dans ta maison et attraper les objets que nous te demandons de nous montrer - je te promets que tu feras tes pas et que nous en apprendrons tous davantage les uns sur les autres en montrant et en racontant virtuellement nos trésors !</td>
+                </tr>
+                <tr>
+                  <td><b>Wikipedia Race:</b> Are you amazing at finding connections between the strangest of things? Or do you just love taking on every challenge you can? Come play the Wikipedia Race, where everyone will start off on one Wikipedia page and have to navigate to a complete different page, just using the embedded links to other Wikipedia pages. On your marks, get set, go!</t>
+                  <td><b>Course Wikipedia:</b> Avez-vous le don de trouver des liens entre les choses les plus étranges ? Ou bien aimez-vous simplement relever tous les défis possibles ? Venez jouer au jeu de Wikipédia, où tout le monde partira d'une page Wikipédia et devra naviguer vers une page complètement différente, en utilisant les hyperliens intégrés aux autres pages Wikipédia. À vos marques, prêts, partez !</td>
+                </tr>
+                <tr>
+                  <td><b>Workplace Feud:</b> Do you think you know your CMB colleagues inside and out? Do you regularly finish your coworkers’ sentences? In this game, you’ll try to guess CMB’s most common answers to various questions. Come put those mind reading skills to the test!</td>
+                  <td><b>Querelle sur le lieu de travail:</b> Pensez-vous connaître vos collègues du BMC sur le bout des doigts ? Finissez-vous régulièrement les phrases de vos collègues ? Dans ce jeu, vous allez essayer de deviner les réponses les plus courantes du BMC à diverses questions. Venez mettre à l'épreuve vos capacités de lecture des pensées !</td>
+                </tr>
+                <tr>
+                  <td><b>Taboo:</b> Do you think you’re a communication master after making so many policy recommendation papers and presentations? Are you basically a walking thesaurus? Come show off your skills in a game of Taboo! You’ll have to get your teammates to say a word written on a card without using four related words (they’re taboo!) in your explanation!</td>
+                  <td><b>Tabou :</b> Pensez-vous être un maître de la communication après avoir rédigé tant de documents de recommandation politique et de présentations ? Êtes-vous un thésaurus ambulant ? Venez montrer vos compétences dans un jeu de Tabou ! Vous devrez faire dire à vos coéquipiers un mot écrit sur une carte sans utiliser quatre mots apparentés (ils sont tabous !) dans votre explication !</td>
                 </tr>
               </tbody>
             </table>
